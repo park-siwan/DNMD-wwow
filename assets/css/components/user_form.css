@@ -1,0 +1,636 @@
+/* ========================================
+    Common
+======================================== */
+/* main-section */
+#userForm .main-section {
+    margin-bottom: 48px;
+}
+
+#userForm .main-section .section-header {
+    margin-bottom: 32px;
+}
+
+#userForm .main-section .section-header .title {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--color-gray-333);
+}
+
+/* ========================================
+    Form
+======================================== */
+/* form-box */
+.form-box {
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+}
+
+/* form-group */
+.form-group {
+    margin-bottom: 0;
+}
+
+/* title */
+.form-group .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-gray-333);
+}
+.form-group .title .required {
+    margin-left: 2px;
+    color: var(--key-color);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 48px;
+}
+
+/* input */
+.form-input {
+    width: 100%;
+    height: 48px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-gray-333);
+    caret-color: var(--key-color);
+}
+.form-input:disabled {
+    color: #777;
+}
+.form-input::placeholder {
+    color: #aaa;
+}
+
+/* label */
+label.radio-wrapper,
+label.checkbox-wrapper {
+    margin-bottom: 0; 
+}
+
+/* Radio & Checkbox Wrapper */
+.radio-wrapper,
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    margin-right: 16px;
+}
+
+.radio-wrapper label,
+.radio-wrapper > span,
+.checkbox-wrapper label,
+.checkbox-wrapper > span {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 24px;
+    padding-left: 28px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+}
+
+.radio-wrapper label::before,
+.radio-wrapper > span::before,
+.checkbox-wrapper label::before,
+.checkbox-wrapper > span::before {
+    position: absolute;
+    left: 0;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    content: '';
+}
+
+/* radio-wrapper */
+.radio-wrapper label::before,
+.radio-wrapper > span::before {
+    top: 2px;
+    width: 20px;
+    height: 20px; 
+    background-image: url('/assets/images/icons/ic-radio-outlined.svg');
+}
+.radio-wrapper input:checked + label::before,
+.radio-wrapper input:checked + span::before {
+    background-image: url('/assets/images/icons/ic-radio-filled.svg');
+}
+
+/* checkbox-wrapper */
+.checkbox-wrapper label::before,
+.checkbox-wrapper > span::before {
+    top: 0;
+    width: 24px;
+    height: 24px; 
+    background-image: url('/assets/images/icons/ic-check-outlined.svg');
+}
+.checkbox-wrapper input:checked + label::before,
+.checkbox-wrapper input:checked + span::before {
+    background-image: url('/assets/images/icons/ic-check-filled.svg');
+}
+
+/* ========================================
+    Reservation-form
+======================================== */
+/* article-applicant */
+.article-applicant .article-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.article-applicant .form-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.article-applicant .form-group {
+    width: calc(50% - 8px);
+    margin-bottom: 24px;
+}
+.article-applicant .form-group:last-child {
+    margin-bottom: 0 !important;
+}
+
+.article-applicant .form-group.is-gender .input-box {
+    flex-direction: row;
+}
+
+/* article-option */
+.article-option {
+    margin-top: 40px;
+}
+
+.article-option > .title {
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-gray-333);
+}
+
+.article-option .form-group {
+    border-top: 1px solid #555;
+    padding: 32px 0;
+}
+.article-option .form-group:first-child {
+    border-top: none;
+    padding-top: 0 !important;
+}
+.article-option .form-group:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.article-option .form-group .title {
+    margin-bottom: 16px;
+}
+
+/* payment */
+.section-payment .form-group {
+    width: 100%;
+}
+
+.section-payment .radio-wrapper {
+    margin-right: 0;
+    margin-bottom: 8px;
+}
+.section-payment .radio-wrapper:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+.section-payment .account-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.section-payment .account-item {
+    display: flex;
+    align-items: center;
+    width: calc(33% - 27px);
+}
+.section-payment .account-item:last-of-type {
+    margin-right: 0 !important;
+}
+
+.section-payment dt {
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-gray-333);
+    white-space: nowrap;
+}
+.section-payment .form-input {
+    width: 100%;
+    color: #ccc;
+}
+
+/* ========================================
+    Complete-form
+======================================== */
+.complete-form .section-payment .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.complete-form .section-payment .button-print {
+    width: auto;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.complete-form dl {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.02%;
+    color: var(--color-gray-333);
+}
+
+.complete-form dt {
+    width: 70px;
+    font-weight: 500;
+    color: #777;
+}
+
+/* link-back */
+.link-back {
+    display: flex !important;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 64px;
+    color: var(--color-gray-333);
+    transition: opacity 150ms ease-in-out;
+}
+button.link-back:hover {
+    opacity: 0.7;
+}
+.link-back .icon-chevron {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    transform: rotate(90deg);
+}
+
+/* article-option */
+.complete-form .article-option dt {
+    width: auto;
+}
+
+.complete-form .article-option .form-group {
+    padding: 24px 0;
+}
+
+.complete-form .article-option dl {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 48px;
+}
+
+.complete-form .article-option dt {
+    margin-bottom: 12px;
+}
+
+/* Payment */
+.complete-form .section-payment .form-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.complete-form .section-payment .form-group {
+    width: calc(50% - 8px);
+}
+
+.complete-form .section-payment .form-group.is-type {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+    Auth-form
+======================================== */
+#underLineForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    row-gap: 24px;
+    text-align: left;
+}
+
+#underLineForm .form-box {
+    position: relative;
+    padding: 0;
+    border: none;
+}
+
+/* label */
+#underLineForm .label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+#underLineForm .label strong {
+    margin-left: 2px;
+    color: var(--key-color);
+}
+
+/* label 끝 */
+
+
+/* input */
+#underLineForm .input {
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid var(--color-border-dark);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-dark);
+    transition: border 150ms ease-in-out;
+}
+
+#underLineForm .input::placeholder {
+    font-weight: 400;
+    color: var(--color-tertiary);
+}
+
+#underLineForm .input:focus {
+    border-bottom-color: var(--color-tertiary);
+}
+/* input 끝 */
+
+
+/* text-length */
+#underLineForm .text-length {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-tertiary);
+}
+/* text-length 끝 */
+
+
+/* radio-group */
+#underLineForm .radio-group {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 24px;
+    width: 100%;
+}
+
+#underLineForm .radio-wrapper {
+    width: auto;
+}
+/* radio-group 끝 */
+
+/* profile-image-group */
+#underLineForm .profile-image-group {
+    width: 144px;
+    height: 144px;
+    margin: 15% auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url('/assets/images/profile_image-300x300.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#underLineForm .profile-image-group .image-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#underLineForm .profile-image-group img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* profile-image-group 끝 */
+
+/* error */
+#underLineForm .error {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-red);
+}
+/* error 끝 */
+
+/* line */
+#underLineForm .line {
+    width: calc(100% + 20px + 20px);
+    height: 8px;
+    margin: 16px 0;
+    background-color: #E8E8E8;
+    transform: translateX(-20px);
+}
+/* line 끝 */
+
+@media screen and (max-width: 1200px) {
+    /* ========================================
+        Reservation-form
+    ======================================== */
+    .section-payment .account-item {
+        width: calc(33% - 17px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* ========================================
+        Common
+    ======================================== */
+    /* main-section */
+    #userForm .main-section {
+        position: relative;
+        margin-bottom: 88px;
+    }
+
+    #userForm .main-section::after {
+        position: absolute;
+        left: -20px;
+        bottom: -48px;
+        display: block;
+        width: 100vw;
+        height: 8px;
+        background-color: #ddd;
+        content: '';
+    }
+
+    #userForm .main-section .section-header {
+        margin-bottom: 24px;
+    }
+
+    #userForm .main-section .section-header .title {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* ========================================
+        Form
+    ======================================== */
+    /* form-box */
+    .form-box {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+        background-color:transparent;
+    }
+
+    /* title */
+    .form-group .title {
+        color: var(--color-gray-333);
+    }
+
+    /* Radio & Checkbox Wrapper */
+    .radio-wrapper,
+    .checkbox-wrapper {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* ========================================
+        Reservation-form
+    ======================================== */
+    /* article-applicant */
+    .article-applicant {
+        position: relative;
+        margin-bottom: 88px;
+    }
+    .article-applicant::after {
+        position: absolute;
+        left: 0;
+        bottom: -48px;
+        display: block;
+        width: 100vw;
+        height: 8px;
+        background-color: #222;
+        transform: translateX(-20px);
+        content: '';
+    }
+    .article-applicant .form-group {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    /* article-option */
+    .article-option .form-group {
+        padding: 24px 0;
+    }
+
+    /* Payment */    
+    .section-payment .account-list {
+        flex-direction: column;
+        margin-top: 8px;
+    }
+
+    .section-payment .account-item {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .section-payment .account-item:last-child {
+        margin-bottom: 0 !important;
+    }
+    
+    .section-payment .account-item dt {
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-gray-333);
+        white-space: nowrap;
+    }
+
+    /* ========================================
+        Complete-form
+    ======================================== */
+    .complete-form .section-payment .button-print {
+        width: auto;
+        padding: 12px;
+        border-radius: 8px;
+    }
+    .complete-form dl {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .complete-form dt {
+        width: auto;
+        font-size: 14px;
+        font-weight: 600;
+        color: #777;
+    }
+
+    /* article-applicant */
+    .complete-form .article-applicant dt {
+        width: auto;
+        margin-bottom: 4px;
+    }
+
+    /* article-option */
+    .complete-form .article-option .form-group {
+        padding: 24px 0;
+    }
+
+    .complete-form .article-option dl {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        min-height: 48px;
+    }
+
+    .complete-form .article-option dt {
+        margin-bottom: 12px;
+        /* font-weight: 400; */
+    }
+
+    /* Payment */
+    .complete-form .section-payment .form-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .complete-form .section-payment .form-group {
+        width: calc(50% - 8px);
+    }
+
+    .complete-form .section-payment .form-group.is-type {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}

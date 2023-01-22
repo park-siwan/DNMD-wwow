@@ -1,0 +1,194 @@
+.section {
+    position: relative;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+    animation-name: fade-in;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+}
+
+/* section-header */
+.section .section-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 48px;
+    background-color: var(--color-white);
+}
+
+.section .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: 555;
+}
+
+.section .title .step {
+    margin-right: 4px;
+}
+
+.section .link-back {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-50%) rotate(90deg);
+    transition: opacity 150ms ease-in-out;
+}
+
+.section .link-back:hover {
+    opacity: 0.7;
+}
+
+.section .color-bar.is-step1 {
+    transform: translateX(-80%);
+}
+
+.section .color-bar.is-step2 {
+    transform: translateX(-60%);
+}
+
+.section .color-bar.is-step3 {
+    transform: translateX(-40%);
+}
+
+.section .color-bar.is-step4 {
+    transform: translateX(-20%);
+}
+
+.section .color-bar.is-finish {
+    transform: translateX(0);
+    border-radius: 0;
+}
+
+/* section-header 끝 */
+
+
+/* section-body */
+.section .section-body {
+    position: relative;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    margin-top: 48px;
+    padding-bottom: 130px;
+    text-align: center;
+    overflow: auto;
+}
+
+.section .member-title {
+    padding: 17% 0 40px;
+    border-bottom: 2px solid #e8e8e8;
+    text-align: left;
+}
+
+.section .member-title strong {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.section .member-title h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.section .member-title p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.section #underLineForm {
+    margin-top: 40px;
+}
+/* section-body 끝 */
+
+
+/* section-footer */
+.section .section-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 8px 20px;
+    background-color: var(--color-white);
+}
+
+.section .section-footer::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 24px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,0) 100%);
+    content: '';
+    transform: translateY(-100%);
+}
+
+.section .section-footer .desc {
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-tertiary);
+    text-align: center;
+}
+
+.section .section-footer .group-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.section .section-footer button,
+.section .section-footer a {
+    border-radius: 8px;
+}
+
+/* section-footer 끝 */
+
+@media screen and (min-width: 768px) {
+    .section {
+        width: 390px;
+        min-height: 500px;
+        height: calc(100vh - 170px - 170px);
+        max-height: 640px;
+        border-radius: 16px;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}

@@ -1,0 +1,27 @@
+:root {
+    --key-color: #04c669;
+
+    /* gray scale */
+    --color-gray-333: #333;
+    --color-gray-555: #555;
+    --color-gray-777: #777;
+    --color-gray-aaa: #aaa;
+    --color-gray-ddd: #ddd;
+    --color-gray-eee: #eee;
+    --color-gray-fff: #fff;
+
+    
+    /* 색상 정의 */
+    --color-black: #000;
+    --color-dark: #333;
+    --color-primary: #555;
+    --color-secondary: #777;
+    --color-tertiary: #aaa;
+    --color-white: #fff;
+    
+    --color-border-dark: #ccc;
+    --color-border: #ddd;
+    --color-background: #eee;
+
+    --color-red: #F15F5F;    
+}

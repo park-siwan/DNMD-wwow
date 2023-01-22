@@ -1,0 +1,39 @@
+/* 
+- 스크롤바
+> 사용: 스크롤 생성할 요소를 감싸거나 클래스를 지정한다.
+> no-scrollbar: 요소의 클래스명에 추가
+> scroll-hover: 요소를 감싸는 부모 클래스명에 추가
+ */
+
+/* no-scrollbar */
+.no-scrollbar {
+    overflow: scroll;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* scroll-hover */
+.scroll-hover {
+    overflow-y: auto;
+    color: transparent;
+    transition: color 150ms ease-in-out;
+}
+
+.scroll-hover:hover {
+    color: var(--color-gray-555);
+}
+
+.scroll-hover::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    margin: 20px 0 ;
+    background-color: transparent;
+    border-radius: 100px;
+}
+
+.scroll-hover::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 20px; /* NOTE: 스크롤 */
+}

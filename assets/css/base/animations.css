@@ -1,0 +1,71 @@
+/* Animation */
+@keyframes fadeIn-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn-down {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes fadeOut-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes fadeOut-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
+
+
+.fadeIn-up {
+  animation-name: fadeIn-up;
+  animation-timing-function: ease-in-out;
+  animation-duration: 300ms;
+}
+.fadeIn-down {
+  animation-name: fadeIn-down;
+  animation-timing-function: ease-in-out;
+  animation-duration: 300ms;
+}
+.fadeOut-up {
+  animation-name: fadeOut-up;
+  animation-timing-function: ease-in-out;
+  animation-duration: 300ms;
+}
+.fadeOut-down {
+  animation-name: fadeOut-down;
+  animation-timing-function: ease-in-out;
+  animation-duration: 300ms;
+}

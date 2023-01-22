@@ -1,0 +1,119 @@
+/* =======================================================
+    Header
+======================================================= */
+.section-tag header {
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+
+/* 선택현황 */
+.section-tag dl {
+    display: flex;
+    align-items: center;
+    padding: 2px 6px;
+    margin-left: auto;
+    border-radius: 100px;
+    background-color: var(--color-background);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--color-tertiary);
+}
+
+.section-tag dl .selected-count {
+    font-weight: 500;
+    color: var(--key-color);
+}
+
+.section-tag dl .total-count::before {
+    margin: 0 2px;
+    font-size: 10px;
+    content: '/';
+}
+/* End of 선택현황 */
+
+
+/* =======================================================
+    Tag List
+======================================================= */
+.section-tag .tag-item:not(:first-child) {
+    margin-top: 24px;
+}
+
+.section-tag .tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    column-gap: 6px;
+    margin: 6px 0;
+}
+
+.section-tag .tag-title {
+    width: 100%;
+    height: 48px;
+    padding: 12px 0;
+    font-style: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--color-dark);
+}
+
+
+/* tag-wrapper */
+.tag-wrapper input:checked + span {
+    color: var(--color-white);
+    background-color: var(--key-color);
+}
+
+.tag-wrapper span {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 14px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-primary);
+    background-color: var(--color-background);
+    transition: background-color 150ms ease-in-out;
+    cursor: pointer;
+}
+
+.tag-wrapper span:hover {
+    background-color: var(--color-border);
+}
+
+
+/* =======================================================
+    Selected List
+======================================================= */
+.section-tag .selected-list {
+    position: sticky;
+    left: 0;
+    bottom: 0; /* 값 수정 필요*/
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.section-tag .selected-item {
+    position: relative;
+    padding: 4px 26px 4px 14px;
+    margin: 10px 0;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: var(--color-background);
+}
+
+.section-tag .selected-item .btn-delete {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    transform: translateY(-50%);
+}

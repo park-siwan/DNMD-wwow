@@ -1,0 +1,106 @@
+/*
+GRID
+- DESLTOP(xl) : breakpoint >= 1920
+- DESKTOP(lg) : breakpoint >= 1200
+- TABLET(md) : breakpoint >= 768
+- MOBILE(sm) : breakpoint < 768
+- MOBILE(xs) : breakpoint <= 320
+*/
+
+.en {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    z-index: -999;
+    display: block !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.is-hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* br */
+.mobile-br {
+    display: none;
+}
+.mobile-xs-br {
+    display: none;
+}
+
+/* responsive */
+.sm-only {
+    display: none !important;
+}
+.md-only {
+    display: none !important;
+}
+.lg-only {
+    display: block !important;
+}
+.sm-hidden {
+    display: block !important;
+}
+.md-hidden {
+    display: block !important;
+}
+.lg-hidden {
+    display: none !important;
+}
+
+/* responsive TABLET md (< 1200px) */
+@media screen and (max-width: 1199px) {
+    .md-only {
+        display: block !important;
+    }
+    .lg-only {
+        display: none !important;
+    }
+    .md-hidden {
+        display: none !important;
+    }
+    .lg-hidden {
+        display: block !important;
+    }
+}
+
+/* responsive MOBILE sm (< 768px) */
+@media screen and (max-width: 767px) {
+    .mobile-br {
+        display: block;
+    }
+
+    .sm-only {
+        display: block !important;
+    }
+    .md-only {
+        display: none !important;
+    }
+    .md-hidden {
+        display: block !important;
+    }
+    .sm-hidden {
+        display: none !important;
+    }
+}
+
+/* Responsive MOBILE xs (<= 320px) */
+@media screen and (max-width: 320px) {
+    .mobile-xs-br {
+        display: block;
+    }
+}
