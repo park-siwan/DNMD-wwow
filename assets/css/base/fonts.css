@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'dnmd-wow-font';
+  src: url('../../fonts/dnmd-wow-font.eot');
+  src: url('../../fonts/dnmd-wow-font.eot#iefix') format('embedded-opentype'),
+    url('../../fonts/dnmd-wow-font.ttf') format('truetype'),
+    url('../../fonts/dnmd-wow-font.woff') format('woff'),
+    url('../../fonts/dnmd-wow-font.svg#dnmd-wow-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dnmd-wow-font' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-health:before {
+  content: '\e900';
+  color: #04c669;
+}
+.ic-chevron:before {
+  content: '\e901';
+  color: #aaa;
+}
