@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="og:title" content="" />
+    <meta name="og:url" content="" />
+    <meta name="og:site_name" content="" />
+    <meta name="og:description" content="" />
+    <meta name="og:image" content="" />
+    <meta name="og:img" content="" />
+
+    <!-- Title -->
+    <title>페이지 타이틀</title>
+
+    <!-- Favicon (웹 페이지 탭 아이콘) -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png"> -->
+
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+
+    <!-- Style -->
+    <link href="/assets/css/site-layout.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/assets/css/base/animations.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- GNB -->
+    <header class="gnb">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="gnb-top">
+              <button class="prev-btn">
+                <i class="ic-chevron" aria-hidden></i>
+              </button>
+              <h1>Nickname</h1>
+              <div style="width: 50px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End of GNB -->
+
+    <!-- Main -->
+    <main class="profile-page">
+      <div>
+        <div class="background-filter1"></div>
+        <div class="background-filter2"></div>
+        <div class="background-picture">
+          <img
+            src="../../assets/images/profile_image-300x300.png"
+            alt="프로필 사진"
+          />
+        </div>
+      </div>
+      <div class="my">
+        <div class="my-wrapper">
+          <div class="profile-picture">
+            <img
+              src="../../assets/images/profile_image-300x300.png"
+              alt="프로필 사진"
+            />
+          </div>
+          <div class="name">
+            <h1 class="primary">Nickname</h1>
+            <span class="secondary">@hambi</span>
+          </div>
+          <button class="follow-btn">+ 팔로우</button>
+          <ol class="hash-chip-container">
+            <li>
+              <button class="hash-chip">#여행</button>
+            </li>
+            <li>
+              <button class="hash-chip">#사진</button>
+            </li>
+            <li>
+              <button class="hash-chip">#스냅</button>
+            </li>
+          </ol>
+          <div class="follow-state">
+            <div class="follower">
+              <h2>팔로워</h2>
+              <span>3.7k</span>
+            </div>
+            <div class="following">
+              <h2>팔로잉</h2>
+              <span>17</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fake-container"></div>
+
+      <nav class="tabs">
+        <button class="is-active">
+          <h3>플레이리스트</h3>
+        </button>
+        <button>
+          <h3>종료된 플레이</h3>
+        </button>
+        <button>
+          <h3>플레이어 정보</h3>
+        </button>
+      </nav>
+
+      <div class="play-lists">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <header>
+                <h1>Nickname의 플레이리스트를 만나보세요!</h1>
+                <h2>
+                  <span class="title">playlist</span>
+                  <span class="user-id">@hambi</span>
+                </h2>
+              </header>
+              <article>
+                <section></section>
+                <section></section>
+                <section></section>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End of Main -->
+
+    <!-- Global Footer -->
+    <footer class="global-footer"></footer>
+    <!-- End of Global Footer -->
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="/assets/js/dnmdScript.js"></script>
+    <script src="/assets/js/siteScript.js"></script>
+  </body>
+</html>
