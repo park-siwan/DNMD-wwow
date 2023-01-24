@@ -14,12 +14,13 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: "Pretendard","Apple Gothic", sans-serif;
+  font-family: 'Pretendard', 'Apple Gothic', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: -0.02em;
   font-style: normal;
   color: var(--color-gray-555);
+  overflow-x: hidden;
 }
 
 h1,
@@ -86,11 +87,11 @@ select:focus {
 }
 
 select {
-  -webkit-appearance: none;/* 네이티브 외형 감추기*/
+  -webkit-appearance: none; /* 네이티브 외형 감추기*/
   -moz-appearance: none;
   appearance: none;
-  font-weight:normal;
-  letter-spacing:normal;
+  font-weight: normal;
+  letter-spacing: normal;
 }
 select::-ms-expand {
   display: none;
