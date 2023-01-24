@@ -14,3 +14,10 @@
 ```css
 transform: rotate(90deg);
 ```
+
+## 링크
+
+### 플레이어 - 프로필
+
+- 퍼블리싱 : https://park-siwan.github.io/DNMD-wwow/views/profile/
+- 시안 : https://www.figma.com/file/G33GvyGTuPdxlt18G2hduv/DNMD_WWWOW?node-id=4098%3A27074&t=rDuoXM0JhPR0AUUp-4
