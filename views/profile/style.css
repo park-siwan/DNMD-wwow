@@ -5,7 +5,7 @@
 .profile-page .background-filter1 {
   z-index: 2;
   width: 100%;
-  max-width: 1140px;
+  /* max-width: 1140px; */
   position: absolute;
   background: linear-gradient(
     180deg,
@@ -18,7 +18,7 @@
 }
 .profile-page .background-filter2 {
   width: 100%;
-  max-width: 940px;
+  /* max-width: 940px; */
   z-index: 1;
   position: absolute;
   background: rgba(0, 0, 0, 0.548);
@@ -28,7 +28,7 @@
 }
 .profile-page .background-picture {
   width: 100%;
-  max-width: 940px;
+  /* max-width: 940px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@
 
 .profile-page .my {
   width: 100%;
-  max-width: 940px;
+  /* max-width: 940px; */
   position: absolute;
   z-index: 4;
 }
