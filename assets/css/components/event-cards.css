@@ -1,0 +1,80 @@
+.event-cards {
+  margin-bottom: 30px;
+}
+
+.event-cards .card {
+  position: relative;
+}
+.event-cards .card .picture {
+  background: rgba(204, 204, 204, 0.5);
+  border-radius: 8px;
+  width: 100%;
+  overflow: hidden;
+  height: 230px;
+  margin-bottom: 18px;
+}
+.event-cards .card .picture img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.event-cards .card .due-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  background-color: var(--key-color);
+  color: var(--color-white);
+}
+.event-cards .title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.event-cards .title-container h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-white);
+}
+.event-cards .like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+.event-cards .card .creator {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-tertiary);
+}
+.event-cards .card .recruit-period,
+.progress-period {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+}
+.event-cards .card .periods {
+  margin-bottom: 10px;
+}
+.event-cards .card .state {
+  display: flex;
+}
+.event-cards .card .state h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+  width: 77px;
+  height: 28px;
+  background: #eeeeee;
+  border-radius: 48px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+}

@@ -37,6 +37,11 @@
     <!-- Style -->
     <link href="/assets/css/site-layout.css" rel="stylesheet" type="text/css" />
     <link
+      href="/assets/css/components/event-cards.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
       href="/assets/css/base/animations.css"
       rel="stylesheet"
       type="text/css"
@@ -45,14 +50,13 @@
   </head>
   <body>
     <!-- GNB -->
-
     <header class="gnb">
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
             <div class="gnb-top">
               <button class="prev-btn">
-                <i class="ic-chevron" aria-hidden></i>
+                <i class="ic-chevron" aria-label="뒤로가기"></i>
               </button>
               <h1>Nickname</h1>
               <div style="width: 50px"></div>
@@ -137,10 +141,66 @@
                   <span class="user-id">@hambi</span>
                 </h2>
               </header>
-              <article>
-                <section></section>
-                <section></section>
-                <section></section>
+
+              <article class="event-cards">
+                <section class="card">
+                  <div class="due-tag">모집 D-20</div>
+                  <div class="picture">
+                    <img
+                      src="https://wwwow.io/dataFiles/Contents/EDaNx52lvC/datas/banner.jpg?1673249336"
+                      alt="event-image"
+                    />
+                  </div>
+                  <div class="title-container">
+                    <h2>이벤트 타이틀</h2>
+                    <button class="like">
+                      <i class="ic-health" aria-label="좋아요"></i>
+                    </button>
+                  </div>
+                  <h3 class="creator">크리에이터명</h3>
+                  <div class="periods">
+                    <h4 class="recruit-period">
+                      모집기간 2023.01.05(목) - 2023.01.15(일)
+                    </h4>
+                    <h4 class="progress-period">
+                      진행기간 2023.01.31(화) 1:30 PM
+                    </h4>
+                  </div>
+                  <div class="state">
+                    <h5>모집중 👍</h5>
+                    <h5>무료 🙌</h5>
+                  </div>
+                </section>
+              </article>
+              <article class="event-cards">
+                <section class="card">
+                  <div class="due-tag">모집 D-20</div>
+                  <div class="picture">
+                    <img
+                      src="https://wwwow.io/dataFiles/Contents/HLWw5XJZrn/datas/thumb.png?1673249337"
+                      alt="event-image"
+                    />
+                  </div>
+                  <div class="title-container">
+                    <h2>이벤트 타이틀</h2>
+                    <button class="like">
+                      <i class="ic-health" aria-label="좋아요"></i>
+                    </button>
+                  </div>
+                  <h3 class="creator">크리에이터명</h3>
+                  <div class="periods">
+                    <h4 class="recruit-period">
+                      모집기간 2023.01.05(목) - 2023.01.15(일)
+                    </h4>
+                    <h4 class="progress-period">
+                      진행기간 2023.01.31(화) 1:30 PM
+                    </h4>
+                  </div>
+                  <div class="state">
+                    <h5>모집중 👍</h5>
+                    <h5>무료 🙌</h5>
+                  </div>
+                </section>
               </article>
             </div>
           </main>
