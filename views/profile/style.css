@@ -1,6 +1,11 @@
+.profile-page {
+  position: relative;
+  margin: 0 -15px;
+}
 .profile-page .background-filter1 {
   z-index: 2;
   width: 100%;
+  max-width: 1140px;
   position: absolute;
   background: linear-gradient(
     180deg,
@@ -12,8 +17,9 @@
   height: 440px;
 }
 .profile-page .background-filter2 {
-  z-index: 1;
   width: 100%;
+  max-width: 940px;
+  z-index: 1;
   position: absolute;
   background: rgba(0, 0, 0, 0.548);
   mix-blend-mode: normal;
@@ -21,6 +27,8 @@
   height: 440px;
 }
 .profile-page .background-picture {
+  width: 100%;
+  max-width: 940px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,14 +36,12 @@
   z-index: 0;
   position: absolute;
   top: 0;
-  width: 100%;
-  max-height: 440px;
   overflow: hidden;
-  /* left: -10%; */
 }
 .profile-page .background-picture img {
   width: 120%;
-  /* max-height: 440px; */
+
+  object-fit: cover;
   max-height: 440px;
 }
 .profile-page .profile-picture {
@@ -51,6 +57,7 @@
 
 .profile-page .my {
   width: 100%;
+  max-width: 940px;
   position: absolute;
   z-index: 4;
 }
@@ -58,7 +65,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: flex-end; */
+
   justify-content: center;
   flex-direction: column;
   height: 440px;
@@ -173,7 +180,8 @@
 
 .profile-page .play-lists {
   background-color: var(--color-black);
-  padding-top: 40px;
+
+  padding: 40px 20px 20px;
 }
 
 .profile-page .play-lists header {
@@ -198,4 +206,15 @@
   font-weight: 400;
   font-size: 12px;
   color: var(--key-color);
+}
+
+@media screen and (min-width: 768px) {
+  .profile-page {
+    margin: 0;
+  }
+  .profile-page .background-picture img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
 }
