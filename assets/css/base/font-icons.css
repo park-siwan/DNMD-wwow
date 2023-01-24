@@ -25,11 +25,15 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ic-health:before {
+.ic-check:before {
   content: '\e900';
-  color: #04c669;
+  color: #fff;
 }
 .ic-chevron:before {
   content: '\e901';
   color: #aaa;
+}
+.ic-heart:before {
+  content: '\e902';
+  color: #04c669;
 }
