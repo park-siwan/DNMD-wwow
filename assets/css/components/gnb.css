@@ -13,7 +13,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* padding-top: 16px; */
 }
 .gnb .prev-btn {
   display: flex;
@@ -26,6 +25,3 @@
 .gnb .prev-btn .ic-chevron::before {
   color: white;
 }
-/* .gnb .ic-health {
-  transform: rotate(90deg);
-} */
