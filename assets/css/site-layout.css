@@ -1,23 +1,24 @@
 /* CSS reset */
-@import url('/assets/css/base/normalize.css');
-@import url('/assets/css/base/reset.css');
-@import url('/assets/css/base/globals.css');
-@import url('/assets/css/base/animations.css');
-@import url('/assets/css/base/grid.css');
-@import url('/assets/css/base/font-icons.css');
+@import url('./base/normalize.css');
+@import url('./base/reset.css');
+@import url('./base/globals.css');
+@import url('./base/animations.css');
+
+@import url('./base/grid.css');
+@import url('./base/font-icons.css');
 
 /* Constants */
-@import url('/assets/css/constants/colors.css');
+@import url('./constants/colors.css');
 
 /* Modules */
-@import url('/assets/css/modules/scrollbar.css');
+@import url('./modules/scrollbar.css');
 
 /* Components */
-@import url('/assets/css/components/section-tag.css');
-@import url('/assets/css/components/member-section.css');
-@import url('/assets/css/components/flowing-smile.css');
-@import url('/assets/css/components/user_form.css');
-@import url('/assets/css/components/gnb.css');
+@import url('./components/section-tag.css');
+@import url('./components/member-section.css');
+@import url('./components/flowing-smile.css');
+@import url('./components/user_form.css');
+@import url('./components/gnb.css');
 
 /* 
 Client Layout
