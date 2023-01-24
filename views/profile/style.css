@@ -242,6 +242,46 @@
   color: var(--key-color);
 }
 
+.profile-page .player-info .chanel-intro,
+.other-chanel {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.profile-page .player-info .chanel-intro-desc {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  /* white-space: pre-line; */
+  margin-bottom: 40px;
+}
+
+.profile-page .player-info .chanel-line {
+  color: white;
+  border-top: 2px solid var(--color-gray-555);
+  width: 100%;
+  margin-bottom: 40px;
+}
+.profile-page .player-info .chanels {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.profile-page .player-info .chanels .chanel-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+}
+.profile-page .player-info .chanels .chanel-img img {
+  border-radius: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   .profile-page {
     margin: 0;
