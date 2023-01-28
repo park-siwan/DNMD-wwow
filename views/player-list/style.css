@@ -167,6 +167,7 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 8px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 768px) {
