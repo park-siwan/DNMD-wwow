@@ -160,6 +160,7 @@ h2 {
 }
 
 .player-list .application button {
+  width: 100%;
   padding: 16px 100px;
   color: var(--color-white);
   background-color: var(--key-color);
