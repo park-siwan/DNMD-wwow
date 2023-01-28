@@ -1,0 +1,14 @@
+.chips {
+  display: flex;
+}
+
+.chips .chip {
+  background: var(--color-gray-eee);
+  border-radius: 100px;
+  padding: 4px 14px;
+  color: var(--color-gray-555);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  margin-right: 6px;
+}

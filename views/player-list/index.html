@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta data -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="og:title" content="" />
+    <meta name="og:url" content="" />
+    <meta name="og:site_name" content="" />
+    <meta name="og:description" content="" />
+    <meta name="og:image" content="" />
+    <meta name="og:img" content="" />
+
+    <!-- Title -->
+    <title>페이지 타이틀</title>
+
+    <!-- Favicon (웹 페이지 탭 아이콘) -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png"> -->
+
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+
+    <!-- Style -->
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    <link
+      href="../../assets/css/site-layout.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../../assets/css/components/event-cards.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../../assets/css/base/animations.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <!-- <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-sm-4"> -->
+    <!-- GNB -->
+    <header class="main-gnb">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="contents">
+              <a href="/">
+                <img class="logo" src="../../assets/images/logo.svg" alt="" />
+              </a>
+              <div style="width: 50px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="fake-height"></div> -->
+    </header>
+    <!-- End of GNB -->
+
+    <!-- Main -->
+    <main class="player-list">
+      <div class="carousel">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 relative">
+              <!-- <div class="flex w-full relative"> -->
+              <div class="contents">
+                <div class="profile">
+                  <img
+                    src="https://wwwow.io/dataFiles/Contents/HLWw5XJZrn/datas/thumb.png?1673249337"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h1>오늘의 추천 와플</h1>
+                  <h2>김작가</h2>
+                  <h3>2023.01.10 ~ 2023.02.28</h3>
+                </div>
+                <div class="pages">
+                  <div class="pagination">
+                    <strong><span>1&nbsp;</span><span>/ 8</span></strong>
+                  </div>
+                  <hr class="bar" />
+                  <hr class="line" />
+                </div>
+              </div>
+              <div class="relative h-[468px] -mx-5">
+                <div class="filter"></div>
+                <div class="main-img">
+                  <img
+                    src="./test-img.png"
+                    alt="플레이어리스트 메인이미지"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h2>WWWOW PLAYER</h2>
+              <div class="chips mb-[30px]">
+                <h3 class="chip">Active Player</h3>
+                <h3 class="chip">알파벳순</h3>
+                <h3 class="chip">셔플</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div
+              class="player flex justify-center flex-col items-center mb-[26px]"
+            >
+              <div class="user-picture w-[120px] h-[120px] mb-4">
+                <!-- 프로필 초록색원 활성화 여부 -->
+                <div
+                  class="circle is-active w-[136px] h-[136px] -top-2 -left-2 border-4"
+                ></div>
+                <img
+                  src="https://wwwow.io/dataFiles/Contents/HLWw5XJZrn/datas/thumb.png?1673249337"
+                  alt="프로필 사진"
+                />
+              </div>
+              <div class="flex flex-col items-center">
+                <h1 class="primary">Nickname</h1>
+                <span class="secondary mb-2">@hambi</span>
+              </div>
+              <!-- 팔로우 팔로잉 전환 2가지 -->
+              <button
+                class="btn bg-[color:var(--key-color)] text-[color:var(--color-white)]"
+              >
+                + 팔로우
+              </button>
+              <!-- <button
+                    class="btn bg-[#EAEAEA] text-[color:var(--color-gray-777)]"
+                  >
+                    <span>팔로잉</span>
+                    <i
+                      class="ic-check before:content-['\e900'] before:text-[color:var(--color-gray-777)]"
+                      aria-label="뒤로가기"
+                    ></i>
+                  </button> -->
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div
+              class="player flex justify-center flex-col items-center mb-[26px]"
+            >
+              <div class="user-picture w-[120px] h-[120px] mb-4">
+                <!-- 프로필 초록색원 활성화 여부 -->
+                <div
+                  class="circle is-active w-[136px] h-[136px] -top-2 -left-2 border-4"
+                ></div>
+                <img
+                  src="https://wwwow.io/dataFiles/Contents/HLWw5XJZrn/datas/thumb.png?1673249337"
+                  alt="프로필 사진"
+                />
+              </div>
+              <div class="flex flex-col items-center">
+                <h1 class="primary">Nickname</h1>
+                <span class="secondary mb-2">@hambi</span>
+              </div>
+              <!-- 팔로우 팔로잉 전환 2가지 -->
+              <!-- <button
+                    class="btn bg-[color:var(--key-color)] text-[color:var(--color-white)]"
+                  >
+                    + 팔로우
+                  </button> -->
+              <button
+                class="btn bg-[#EAEAEA] text-[color:var(--color-gray-777)]"
+              >
+                <span>팔로잉</span>
+                <i
+                  class="ic-check before:content-['\e900'] before:text-[color:var(--color-gray-777)]"
+                  aria-label="뒤로가기"
+                ></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div
+              class="player flex justify-center flex-col items-center mb-[26px]"
+            >
+              <div class="user-picture w-[120px] h-[120px] mb-4">
+                <!-- 프로필 초록색원 활성화 여부 -->
+                <div
+                  class="circle is-active w-[136px] h-[136px] -top-2 -left-2 border-4"
+                ></div>
+                <img
+                  src="https://wwwow.io/dataFiles/Contents/HLWw5XJZrn/datas/thumb.png?1673249337"
+                  alt="프로필 사진"
+                />
+              </div>
+              <div class="flex flex-col items-center">
+                <h1 class="primary">Nickname</h1>
+                <span class="secondary mb-2">@hambi</span>
+              </div>
+              <!-- 팔로우 팔로잉 전환 2가지 -->
+              <!-- <button
+                    class="btn bg-[color:var(--key-color)] text-[color:var(--color-white)]"
+                  >
+                    + 팔로우
+                  </button> -->
+              <button
+                class="btn bg-[#EAEAEA] text-[color:var(--color-gray-777)]"
+              >
+                <span>팔로잉</span>
+                <i
+                  class="ic-check before:content-['\e900'] before:text-[color:var(--color-gray-777)]"
+                  aria-label="뒤로가기"
+                ></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div
+              class="player flex justify-center flex-col items-center mb-[26px]"
+            >
+              <div class="user-picture w-[120px] h-[120px] mb-4">
+                <!-- 프로필 초록색원 활성화 여부 -->
+                <div
+                  class="circle is-active w-[136px] h-[136px] -top-2 -left-2 border-4"
+                ></div>
+                <img
+                  src="https://wwwow.io/dataFiles/Contents/HLWw5XJZrn/datas/thumb.png?1673249337"
+                  alt="프로필 사진"
+                />
+              </div>
+              <div class="flex flex-col items-center">
+                <h1 class="primary">Nickname</h1>
+                <span class="secondary mb-2">@hambi</span>
+              </div>
+              <!-- 팔로우 팔로잉 전환 2가지 -->
+              <!-- <button
+                    class="btn bg-[color:var(--key-color)] text-[color:var(--color-white)]"
+                  >
+                    + 팔로우
+                  </button> -->
+              <button
+                class="btn bg-[#EAEAEA] text-[color:var(--color-gray-777)]"
+              >
+                <span>팔로잉</span>
+                <i
+                  class="ic-check before:content-['\e900'] before:text-[color:var(--color-gray-777)]"
+                  aria-label="뒤로가기"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="application">
+        <button>와우 플레이어 신청하기</button>
+      </div>
+    </main>
+
+    <!-- End of Main -->
+
+    <!-- Global Footer -->
+    <footer class="global-footer"></footer>
+    <!-- </div>
+      </div>
+    </div> -->
+    <!-- End of Global Footer -->
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="../../assets/js/dnmdScript.js"></script>
+    <script src="../../assets/js/siteScript.js"></script>
+  </body>
+</html>

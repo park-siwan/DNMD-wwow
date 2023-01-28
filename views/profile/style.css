@@ -1,8 +1,6 @@
 .profile-page {
   position: relative;
-  /* margin: 0 auto; */
-  /* width: 100%; */
-  margin: 0 -16px;
+  margin: 0 -20px;
 }
 
 .profile-page .profile-container {
@@ -88,9 +86,7 @@
   flex-direction: column;
   height: 440px;
 }
-.profile-page .hash-chip-container {
-  display: flex;
-}
+
 .profile-page .name {
   display: flex;
   align-items: center;
@@ -141,6 +137,7 @@
 }
 
 .profile-page .hash-chip-container {
+  display: flex;
   margin-bottom: 26px;
 }
 
