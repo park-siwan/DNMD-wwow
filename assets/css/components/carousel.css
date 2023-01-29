@@ -38,7 +38,7 @@
 }
 
 .carousel .contents h1,
-h2 {
+.carousel .contents h2 {
   color: var(--color-white);
   line-height: 100%;
 }
