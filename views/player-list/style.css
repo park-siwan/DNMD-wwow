@@ -101,7 +101,7 @@ h2 {
 .player-list .carousel .contents .pages .bar {
   position: absolute;
   border-radius: 8px;
-  width: 43.75px;
+  width: 12.5%;
   border-top: 2px solid rgba(255, 255, 255, 0.56);
 }
 .player-list .carousel .contents .pages .line {
