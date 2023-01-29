@@ -3,6 +3,9 @@
 }
 
 .chips .chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--color-gray-eee);
   border-radius: 100px;
   padding: 4px 14px;
@@ -11,4 +14,7 @@
   font-size: 13px;
   line-height: 150%;
   margin-right: 6px;
+}
+.chips .chip :last-child {
+  margin-left: 3px;
 }

@@ -25,15 +25,27 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ic-check:before {
+.ic-abc:before {
   content: '\e900';
+  color: #aaa;
+}
+.ic-check:before {
+  content: '\e901';
   color: #fff;
 }
 .ic-chevron:before {
-  content: '\e901';
+  content: '\e902';
   color: #aaa;
 }
 .ic-heart:before {
-  content: '\e902';
+  content: '\e903';
   color: #04c669;
+}
+.ic-search:before {
+  content: '\e904';
+  color: #fff;
+}
+.ic-shuffle:before {
+  content: '\e905';
+  color: #aaa;
 }
