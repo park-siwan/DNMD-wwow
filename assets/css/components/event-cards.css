@@ -6,6 +6,7 @@
   position: relative;
 }
 .event-cards .card .picture {
+  display: block;
   background: rgba(204, 204, 204, 0.5);
   border-radius: 8px;
   width: 100%;
@@ -40,7 +41,7 @@
 .event-cards .title-container h2 {
   font-weight: 600;
   font-size: 16px;
-  color: var(--color-white);
+  /* color: var(--color-white); */
 }
 .event-cards .like {
   display: flex;
@@ -52,7 +53,7 @@
 .event-cards .card .creator {
   font-weight: 500;
   font-size: 14px;
-  color: var(--color-tertiary);
+  /* color: var(--color-tertiary); */
 }
 .event-cards .card .recruit-period,
 .progress-period {
