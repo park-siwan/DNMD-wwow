@@ -123,13 +123,15 @@
         </div>
       </div>
 
-      <div class="wow-pick bg-[color:var(--color-gray-222)] h-[470px]">
+      <div class="wow-pick">
         <header>
           <div class="container">
             <div class="row">
               <div class="col-sm-4">
-                <div class="flex justify-between items-start mt-14">
-                  <div>
+                <div
+                  class="flex justify-between items-start bg-[color:var(--color-gray-222)] h-[470px] -mx-5 px-5"
+                >
+                  <div class="mt-14">
                     <h2
                       class="text-[color:var(--key-color)] font-bold text-2xl"
                     >
@@ -141,7 +143,7 @@
                       와우가 추천하는 플레이리스트
                     </h3>
                   </div>
-                  <button>전체보기</button>
+                  <button class="mt-14">전체보기</button>
                 </div>
               </div>
             </div>
@@ -242,46 +244,6 @@
                         />
                         <span>주제06</span>
                       </label>
-
-                      <label class="tag-wrapper">
-                        <input
-                          type="checkbox"
-                          name="member_interest"
-                          value="B0007"
-                          class="visually-hidden input tag"
-                        />
-                        <span>주제07</span>
-                      </label>
-
-                      <label class="tag-wrapper">
-                        <input
-                          type="checkbox"
-                          name="member_interest"
-                          value="B0008"
-                          class="visually-hidden input tag"
-                        />
-                        <span>주제08</span>
-                      </label>
-
-                      <label class="tag-wrapper">
-                        <input
-                          type="checkbox"
-                          name="member_interest"
-                          value="B0009"
-                          class="visually-hidden input tag"
-                        />
-                        <span>주제09</span>
-                      </label>
-
-                      <label class="tag-wrapper">
-                        <input
-                          type="checkbox"
-                          name="member_interest"
-                          value="B0010"
-                          class="visually-hidden input tag"
-                        />
-                        <span>주제10</span>
-                      </label>
                     </div>
                   </div>
                 </section>
@@ -335,7 +297,7 @@
                   </section>
                 </article>
                 <button
-                  class="border-[1px] border-[color:var(--color-gray-aaa)] border-solid rounded-lg w-full h-12"
+                  class="border-[1px] border-[color:var(--color-gray-aaa)] border-solid rounded-lg w-full h-12 text-sm text-[color:var(--color-gray-777)] mb-12"
                 >
                   더보기
                 </button>
@@ -345,8 +307,32 @@
         </div>
       </div>
 
-      <div class="application">
-        <h3>와우 플레이어 신청하기</h3>
+      <div class="application mb-16">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <a
+                href=""
+                class="block bg-[color:var(--color-gray-333)] py-6 px-12 rounded-lg"
+              >
+                <h4
+                  class="text-[color:var(--key-color)] font-semibold text-[13px] mb-1"
+                >
+                  프로필도 꾸미고, 팔로워도 모으고 싶다면?
+                </h4>
+                <h3
+                  class="text-[color:var(--color-white)] font-semibold text-xl"
+                >
+                  와우 플레이어 신청하기
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wow-player">
+        <header></header>
       </div>
     </main>
 
