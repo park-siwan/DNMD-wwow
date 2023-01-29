@@ -11,6 +11,7 @@ button:focus {
   color: var(--key-color);
   font-weight: 700;
   font-size: 24px;
+  margin-top: 50px;
   margin-bottom: 26px;
 }
 
