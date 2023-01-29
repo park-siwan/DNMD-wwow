@@ -21,6 +21,10 @@
   width: 100%;
   height: 100%;
 }
-.main-gnb .wrap .logo {
+.main-gnb .contents .logo {
   width: 96px;
+}
+.main-gnb .contents .search {
+  width: 32px;
+  height: 32px;
 }

@@ -1,5 +1,5 @@
 button:focus {
-  outline: none;
+  outline: none !important;
 }
 .player-list {
   width: 100%;
@@ -18,7 +18,7 @@ button:focus {
   top: 0;
   /* padding-top: 80px; */
   height: 438px;
-  width: 100%;
+  width: 105%;
   z-index: 20;
   /* padding: 0 20px; */
   /* left: 0; */
@@ -180,6 +180,11 @@ h2 {
 
   .player-list .carousel .main-img {
     width: 100%;
+  }
+  .player-list .carousel .contents {
+    margin: 0 -10px;
+    width: 100%;
+    padding: 80px 10px 20px 10px;
   }
 }
 @media screen and (min-width: 1200px) {
