@@ -20,7 +20,7 @@ body {
   letter-spacing: -0.02em;
   font-style: normal;
   color: var(--color-gray-555);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 h1,
