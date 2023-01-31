@@ -7,33 +7,41 @@
 
 /* no-scrollbar */
 .no-scrollbar {
-    overflow: scroll;
+  overflow: scroll;
 }
 
 .no-scrollbar::-webkit-scrollbar {
-    display: none !important;
+  display: none !important;
 }
 
 /* scroll-hover */
 .scroll-hover {
-    overflow-y: auto;
-    color: transparent;
-    transition: color 150ms ease-in-out;
+  overflow-y: auto;
+  color: transparent;
+  transition: color 150ms ease-in-out;
 }
 
 .scroll-hover:hover {
-    color: var(--color-gray-555);
+  color: var(--color-gray-555);
 }
 
 .scroll-hover::-webkit-scrollbar {
-    width: 5px;
-    height: 8px;
-    margin: 20px 0 ;
-    background-color: transparent;
-    border-radius: 100px;
+  width: 5px;
+  height: 8px;
+  margin: 20px 0;
+  background-color: transparent;
+  border-radius: 100px;
 }
 
 .scroll-hover::-webkit-scrollbar-thumb {
-    border-radius: 100px;
-    box-shadow: inset 0 0 0 20px; /* NOTE: 스크롤 */
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 20px; /* NOTE: 스크롤 */
+}
+
+.scroll-horizontal {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.scroll-horizontal::-webkit-scrollbar {
+  display: none !important;
 }
