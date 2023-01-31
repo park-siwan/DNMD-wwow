@@ -24,14 +24,14 @@
   position: absolute;
   top: 16px;
   left: 16px;
-  padding: 6px 8px;
+  /* padding: 6px 8px;
   border-radius: 4px;
   font-weight: 600;
   font-size: 12px;
   line-height: 100%;
   background-color: var(--key-color);
   color: var(--color-white);
-  white-space: nowrap;
+  white-space: nowrap; */
 }
 .event-cards .title-container {
   display: flex;
