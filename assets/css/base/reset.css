@@ -55,6 +55,9 @@ a,
 button {
   cursor: pointer;
 }
+button {
+  white-space: nowrap;
+}
 
 a {
   color: inherit;
