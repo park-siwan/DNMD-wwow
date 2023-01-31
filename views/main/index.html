@@ -83,9 +83,9 @@
     <!-- Main -->
     <main class="main-page w-full">
       <div class="carousel">
-        <div class="container">
+        <div class="container relative">
           <div class="row">
-            <div class="col-sm-4 relative">
+            <div class="col-sm-4 h-[468px]">
               <!-- <div class="flex w-full relative"> -->
               <div class="contents">
                 <div>
@@ -107,7 +107,7 @@
                   <hr class="line" />
                 </div>
               </div>
-              <div class="relative h-[468px] -mx-5">
+              <div class="absolute w-full h-full left-0">
                 <div class="filter"></div>
                 <div class="main-img">
                   <img
@@ -124,32 +124,58 @@
       </div>
 
       <div class="wow-pick">
-        <header>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-4">
-                <div
-                  class="flex justify-between items-start bg-[color:var(--color-gray-222)] h-[470px] -mx-5 px-5"
-                >
-                  <div class="mt-14">
-                    <h2
-                      class="text-[color:var(--key-color)] font-bold text-2xl"
+        <div class="container bg-[color:var(--color-gray-222)] h-[470px]">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="">
+                <header>
+                  <div class="flex justify-between items-start mb-6">
+                    <div class="mt-14">
+                      <h2
+                        class="text-[color:var(--key-color)] font-bold text-2xl mb-[8px]"
+                      >
+                        와우 Pick!
+                      </h2>
+                      <h3
+                        class="text-[color:var(--color-gray-eee)] font-medium text-sm"
+                      >
+                        와우가 추천하는 플레이리스트
+                      </h3>
+                    </div>
+                    <button
+                      class="mt-14 text-[color:var(--color-tertiary)] text-[13px] font-medium"
                     >
-                      와우 Pick!
-                    </h2>
-                    <h3
-                      class="text-[color:var(--color-gray-eee)] font-medium text-sm"
-                    >
-                      와우가 추천하는 플레이리스트
-                    </h3>
+                      전체보기
+                    </button>
                   </div>
-                  <button class="mt-14">전체보기</button>
-                </div>
+                </header>
               </div>
             </div>
           </div>
-        </header>
-        <div class="cards"></div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="scroll-horizontal">
+                <article class="inline-flex space-x-3">
+                  <section
+                    class="bg-[#41CD82] w-[200px] h-[200px] rounded-lg"
+                  ></section>
+                  <section
+                    class="bg-gradient-to-r from-[#5CEFA0] to-[#17B08C] w-[200px] h-[200px] rounded-lg"
+                  ></section>
+                  <section
+                    class="bg-[#41CD82] w-[200px] h-[200px] rounded-lg"
+                  ></section>
+                  <section
+                    class="bg-[#41CD82] w-[200px] h-[200px] rounded-lg"
+                  ></section>
+                  <section
+                    class="bg-[#41CD82] w-[200px] h-[200px] rounded-lg"
+                  ></section>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="wow-event">
