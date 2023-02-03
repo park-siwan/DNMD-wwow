@@ -169,6 +169,26 @@
   top: -8px;
 }
 
+.pizza {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.oval {
+  border: 4px solid transparent;
+  border-radius: 100%;
+  background-image: linear-gradient(#222, #222),
+    linear-gradient(to right bottom, #4bffa9, #00d7ca, #04c669);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin-top: 22px;
+}
+
+.oval > img {
+  margin: 0 auto;
+}
+
 .preview h4 {
   color: var(--color-white);
   font-weight: 700;
@@ -208,32 +228,39 @@
   margin-bottom: 136px;
 }
 
-.festival .line .star {
+.festival .line .star,
+.festival .line .bstar,
+.festival .line .curvature {
   position: relative;
 }
 
 .festival .line .star:first-child {
   width: 24px;
   height: 24px;
-  /* top: -128px; */
-  top: -295px;
-  left: -109px;
+  top: -285px;
+  left: 20px;
 }
 
 .festival .line .star:nth-child(2) {
   width: 12px;
   height: 12px;
-  /* top: -169px; */
-  top: -336px;
-  left: -81px;
+  top: -348px;
+  left: 48px;
 }
 
-.festival .line .star:last-child {
+.festival .line .bstar {
   width: 34px;
   height: 34px;
-  /* top: -55px; */
-  top: -222px;
-  left: 137px;
+  top: -256px;
+  left: 287px;
+}
+
+.festival .line .curvature {
+  width: 387.36px;
+  height: 566.01px;
+  top: -1019px;
+  left: 25px;
+  /* z-index: 1;  html 순서가 잘못된건가 */
 }
 
 .content {
