@@ -113,20 +113,22 @@ button:focus {
 .info {
   height: 467px;
 }
-
+/* .star .circle {
+  position: absolute;
+} */
+/* 
 .info .line .star {
   width: 24px;
   height: 24px;
-  position: relative;
-  top: -126px;
-  left: -44px;
-}
+  position: absolute;
 
-.info .line .circle {
+} */
+
+/* .info .line .circle {
   position: relative;
   top: -135px;
   left: -36px;
-}
+} */
 
 .copywriting h3 {
   color: var(--color-gray-333);
@@ -138,7 +140,6 @@ button:focus {
 
 .copywriting h2,
 .copywriting h2 > span {
-  color: var(--sub-color);
   font-weight: 600;
   font-size: 22px;
   line-height: 150%;
@@ -156,7 +157,7 @@ button:focus {
   font-size: 13px;
   line-height: 150%;
   text-align: center;
-  margin: 0 2px;
+  /* margin: 0 2px; */
 }
 
 .copywriting p > span {
@@ -229,29 +230,18 @@ button:focus {
   line-height: 150%;
 }
 
-.preview img {
+/* .preview img {
   width: 234px;
   margin-top: 22px;
-}
+} */
 
-.preview h3:nth-child(5) {
-  color: var(--color-white);
-  margin-top: 112px;
-  margin-bottom: 12px;
-}
-
-.preview h2:nth-child(6) {
-  text-align: center;
-  margin-bottom: 136px;
-}
-
-.festival .line .star,
+/* .festival .line .star,
 .festival .line .bstar,
 .festival .line .curvature {
   position: relative;
-}
+} */
 
-.festival .line .star:first-child {
+/* .festival .line .star:first-child {
   width: 24px;
   height: 24px;
   top: -285px;
@@ -270,15 +260,15 @@ button:focus {
   height: 34px;
   top: -256px;
   left: 287px;
-}
-
-.festival .line .curvature {
+} */
+/* z-index: 1;  html 순서가 잘못된건가 */
+/* .festival .line .curvature {
   width: 387.36px;
   height: 566.01px;
   top: -1019px;
   left: 25px;
-  /* z-index: 1;  html 순서가 잘못된건가 */
-}
+
+} */
 
 /* content > section(=swipe) */
 .content {

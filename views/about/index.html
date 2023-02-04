@@ -57,6 +57,10 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- GNB -->
@@ -141,33 +145,38 @@
         <div class="container info" id="wow">
           <div class="row">
             <div class="col-sm-4">
-              <section class="copywriting">
+              <div class="copywriting">
                 <h3>기대하고 참여한 행사,</h3>
-                <h2>
-                  내가 만들어도 <span>이것보단 더 재밌겠다</span><br />
+                <h2 class="text-[color:var(--sub-color)]">
+                  내가 만들어도
+                  <span class="text-[color:var(--sub-color)]"
+                    >이것보단 더 재밌겠다</span
+                  ><br />
                   싶은 순간이 있었나요?
                 </h2>
-                <h4>“</h4>
-                <p>
+                <span>“</span>
+                <p class="mb-[10px]">
                   재밌는 아이디어는 떠올랐는데<br />
                   어디서부터 시작할 지 모르겠고…<br />
                   <span>더 많은 사람들과 함께 하고 싶다면?</span>
                 </p>
-                <h4>”</h4>
-                <h2>그렇다면, 와우에서 만들어보세요!</h2>
-                <div class="line">
+                <span class="mb-[44px]">”</span>
+                <div class="relative">
+                  <h2 class="text-[color:var(--color-gray-333)]">
+                    그렇다면, 와우에서 만들어보세요!
+                  </h2>
                   <img
-                    class="star"
-                    src="../../assets/images/star.png"
+                    class="star w-6 absolute -top-5 left-[65px]"
+                    src="../../assets/images/star.svg"
                     alt="star"
                   />
                   <img
-                    class="circle"
-                    src="../../assets/images/circle.png"
+                    class="circle w-[61px] absolute -top-1 left-[72px]"
+                    src="../../assets/images/circle.svg"
                     alt="circle"
                   />
                 </div>
-              </section>
+              </div>
             </div>
           </div>
         </div>
@@ -185,7 +194,7 @@
                 <h2>피자 페스티벌</h2>
 
                 <!-- 피자 세 개 -->
-                <div class="pizza">
+                <div class="pizza mb-[78px]">
                   <div class="oval is-active w-[254px] h-[298px]">
                     <img src="../../assets/images/pizza.png" alt="피자" />
                   </div>
@@ -196,27 +205,32 @@
                     <img src="../../assets/images/pizza.png" alt="피자" />
                   </div>
                 </div>
-                <div id="event-find"></div>
-                <h3>플레이어가 되면,</h3>
-                <h2>
-                  매일 이벤트를 열고<br />
-                  참여자를 모을 수 있어요
-                </h2>
-                <img
-                  class="star"
-                  src="../../assets/images/star.png"
-                  alt="star"
-                />
-                <img
-                  class="star"
-                  src="../../assets/images/star.png"
-                  alt="star"
-                />
-                <img
-                  class="bstar"
-                  src="../../assets/images/bstar.png"
-                  alt="star"
-                />
+                <div id="event-find">
+                  <div
+                    class="relative flex flex-col justify-center items-center mb-8"
+                  >
+                    <h3>플레이어가 되면,</h3>
+                    <h2 class="text-center">
+                      매일 이벤트를 열고<br />
+                      참여자를 모을 수 있어요
+                    </h2>
+                    <img
+                      class="star w-3 absolute -top-10 left-[40px]"
+                      src="../../assets/images/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="star w-6 absolute -top-5 left-[15px]"
+                      src="../../assets/images/star.svg"
+                      alt="star"
+                    />
+                    <img
+                      class="star w-6 absolute bottom-[-20px] right-[-30px]"
+                      src="../../assets/images/star.svg"
+                      alt="star"
+                    />
+                  </div>
+                </div>
                 <!-- <div class="line">
                   <img
                     class="curvature"
@@ -276,7 +290,6 @@
           <h3>자주 묻는 질문</h3>
           <ul class="faq">
             <li>
-              <!-- 이렇게 쓰는게 맞나 .. -->
               <!-- <button class="flex justify-center items-center">
                 <img
                   class="w-[5.17px] h-[8.67px]"
@@ -456,5 +469,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="../../assets/js/dnmdScript.js"></script>
     <script src="../../assets/js/siteScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
