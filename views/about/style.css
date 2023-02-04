@@ -10,6 +10,7 @@ button:focus {
   --bg-color: #f5f5f5;
 }
 
+/* wwwow > Header(=slogan) */
 .wwwow {
   height: 560px;
 }
@@ -62,10 +63,10 @@ button:focus {
 .baemin {
   position: relative;
   top: -72px;
-  /* right: -38px; padding값 맞추면 이거 */
-  right: -58px; /* logo에 맞추면 이거*/
+  right: -58px;
 }
 
+/* tab > menu */
 .tab {
   height: 48px;
   background-color: var(--bg-color);
@@ -104,6 +105,7 @@ button:focus {
   box-shadow: inset 0px -1px 0px #aaaaaa;
 }
 
+/* info > section(=copywriting) */
 .info {
   height: 467px;
   background-color: var(--bg-color);
@@ -165,6 +167,7 @@ button:focus {
   margin-bottom: 70px;
 }
 
+/* festival > section(=preview) */
 .festival {
   height: 852px;
 }
@@ -274,6 +277,7 @@ button:focus {
   /* z-index: 1;  html 순서가 잘못된건가 */
 }
 
+/* content > section(=swipe) */
 .content {
   height: 1139px;
   background-color: var(--bg-color);
@@ -322,4 +326,79 @@ button:focus {
 .swipe h2:last-child {
   margin-top: 60px;
   margin-bottom: 38px;
+}
+
+/* questions > FAQ = 자주 묻는 질문 */
+.questions h3 {
+  color: var(--color-gray-333);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 64px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.faq {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq > li {
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+.faq input {
+  display: none;
+}
+
+.faq label {
+  /* 제목 - 클릭 영역 */
+  color: var(--color-gray-555);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  margin: 20px 0 0;
+  cursor: pointer;
+}
+
+.faq label::before {
+  /* 제목 앞 화살표 */
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-left: 8px solid #a00;
+  margin: 2px 0 0 8px;
+  float: right;
+}
+
+.faq input:checked + label::before {
+  /* 내용 펼침 상태 제목 앞 화살표 */
+  border: 8px solid transparent;
+  border-top: 8px solid #a00;
+  border-bottom: 0;
+  margin: 8px 4px 0;
+}
+
+.faq div {
+  /* 내용 영역 - 기본 감춤 상태 */
+  display: none;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: max-height 0.4s;
+}
+.faq div > p {
+  color: var(--color-gray-777);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.faq input:checked + label + div {
+  /* 내용 영역 펼침 */
+  display: block;
 }
