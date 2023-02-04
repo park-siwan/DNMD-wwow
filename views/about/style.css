@@ -365,21 +365,21 @@ button:focus {
 }
 
 .faq label::before {
-  /* 제목 앞 화살표 */
+  /* 제목 옆 화살표 */
   display: block;
   content: '';
   width: 0;
   height: 0;
   border: 8px solid transparent;
-  border-left: 8px solid #a00;
+  border-left: 8px solid var(--color-gray-777);
   margin: 2px 0 0 8px;
   float: right;
 }
 
 .faq input:checked + label::before {
-  /* 내용 펼침 상태 제목 앞 화살표 */
+  /* 내용 펼침 상태 제목 옆 화살표 */
   border: 8px solid transparent;
-  border-top: 8px solid #a00;
+  border-top: 8px solid var(--color-gray-777);
   border-bottom: 0;
   margin: 8px 4px 0;
 }
