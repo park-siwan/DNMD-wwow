@@ -1,0 +1,67 @@
+swiper-container {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 150px;
+}
+
+swiper-slide {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 278px;
+  width: 234px;
+
+  border-radius: 200%;
+}
+.img-container {
+  width: 234px;
+  height: 278px;
+  position: relative;
+}
+.img-container img {
+  position: absolute;
+  width: 234px;
+  height: 278px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  object-fit: cover;
+  /* width: 100%;
+  height: 100%; */
+  border-radius: 200%;
+  z-index: 5;
+}
+.wow-view-line {
+  position: absolute;
+  width: 204px;
+  height: 245px;
+  z-index: 0;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 200%;
+  border: 4px solid transparent;
+  background-image: linear-gradient(#222, #222),
+    linear-gradient(to right bottom, #4bffa9, #00d7ca, #04c669);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+/* 정중앙 블러없는곳 */
+.swiper-slide-next {
+  width: 234px !important;
+  height: 278px !important;
+  filter: blur(0) !important;
+  transform: scale(1.4) !important;
+}
+/* 와우 맛보기 좌우 */
+swiper-slide :not(.swiper-slide-next) img {
+  width: 186px;
+  height: 222px;
+
+  /* filter: blur(5px); */
+}
+
+.swiper-slide-active,
+.swiper-slide-visible {
+  filter: blur(5px);
+}

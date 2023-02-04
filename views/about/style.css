@@ -305,6 +305,7 @@ button:focus {
   line-height: 150%;
   margin-top: 62px;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .swipe h2 {

@@ -61,6 +61,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./swiper.css" />
   </head>
   <body>
     <!-- GNB -->
@@ -188,24 +189,98 @@
           <div class="row">
             <div class="col-sm-4">
               <div class="triangle"></div>
-              <section class="preview">
+              <section class="preview overflow-hidden">
                 <h4>와우 엿보기</h4>
-                <h3>피자 덕후가 만드는</h3>
-                <h2>피자 페스티벌</h2>
-
                 <!-- 피자 세 개 -->
-                <div class="pizza mb-[78px]">
-                  <div class="oval is-active w-[254px] h-[298px]">
-                    <img src="../../assets/images/pizza.png" alt="피자" />
-                  </div>
-                  <div class="oval is-active w-[254px] h-[298px]">
-                    <img src="../../assets/images/pizza.png" alt="피자" />
-                  </div>
-                  <div class="oval is-active w-[254px] h-[298px]">
-                    <img src="../../assets/images/pizza.png" alt="피자" />
-                  </div>
+                <div class="w-[200%] flex justify-center scroll-horizontal">
+                  <swiper-container
+                    class="mySwiper"
+                    watch-slides-progress="true"
+                    slides-per-view="3"
+                    autoplay="false"
+                    loop="true"
+                  >
+                    <swiper-slide>
+                      <div class="flex flex-col items-center justify-center">
+                        <h3 class="text-center h-6">피자 덕후가 만드는</h3>
+                        <h2 class="text-center mb-6 h-7">피자 페스티벌2</h2>
+                        <div class="img-container">
+                          <img
+                            src="https://blog.kakaocdn.net/dn/P1x89/btq5adtMRSY/w3gQIaKZLf1TPR0QXqqXik/img.jpg"
+                            alt="피자"
+                          />
+                          <div class="wow-view-line"></div>
+                        </div>
+                      </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <div class="flex flex-col items-center justify-center">
+                        <h3 class="text-center h-6">피자 덕후가 만드는</h3>
+                        <h2 class="text-center mb-6 h-7">피자 페스티벌2</h2>
+                        <div class="img-container">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/800px-Supreme_pizza.jpg"
+                            alt="피자"
+                          />
+                          <div class="wow-view-line"></div>
+                        </div>
+                      </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <div class="flex flex-col items-center justify-center">
+                        <h3 class="text-center h-6">피자 덕후가 만드는</h3>
+                        <h2 class="text-center mb-6 h-7">피자 페스티벌3</h2>
+                        <div class="img-container">
+                          <img
+                            src="https://i.ytimg.com/vi/X6VrQZhr5hQ/maxresdefault.jpg"
+                            alt="피자"
+                          />
+                          <div class="wow-view-line"></div>
+                        </div>
+                      </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <div class="flex flex-col items-center justify-center">
+                        <h3 class="text-center h-6">피자 덕후가 만드는</h3>
+                        <h2 class="text-center mb-6 h-7">피자 페스티벌4</h2>
+                        <div class="img-container">
+                          <img
+                            src="http://www.dailyimpact.co.kr/news/photo/202211/88703_71620_2419.jpg"
+                            alt="피자"
+                          />
+                          <div class="wow-view-line"></div>
+                        </div>
+                      </div>
+                    </swiper-slide>
+                    <!-- <swiper-slide>
+                      <div class="flex flex-col items-center justify-center">
+                        <h3 class="text-center">피자 덕후가 만드는</h3>
+                        <h2 class="text-center mb-6">피자 페스티벌</h2>
+                        <div class="img-container">
+                          <img
+                            src="https://i.ytimg.com/vi/X6VrQZhr5hQ/maxresdefault.jpg"
+                            alt="피자"
+                          />
+                          <div class="wow-view-line"></div>
+                        </div>
+                      </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <div class="flex flex-col items-center justify-center">
+                        <h3 class="text-center">피자 덕후가 만드는</h3>
+                        <h2 class="text-center mb-6">피자 페스티벌</h2>
+                        <div class="img-container">
+                          <img
+                            src="http://www.dailyimpact.co.kr/news/photo/202211/88703_71620_2419.jpg"
+                            alt="피자"
+                          />
+                          <div class="wow-view-line"></div>
+                        </div>
+                      </div>
+                    </swiper-slide> -->
+                  </swiper-container>
                 </div>
-                <div id="event-find">
+                <div id="event-find" class="mt-[112px]">
                   <div
                     class="relative flex flex-col justify-center items-center mb-8"
                   >
@@ -469,6 +544,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="../../assets/js/dnmdScript.js"></script>
     <script src="../../assets/js/siteScript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
   </body>
 </html>
