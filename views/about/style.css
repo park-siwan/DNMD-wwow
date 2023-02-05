@@ -208,7 +208,7 @@ button:focus {
 }
 
 .preview h4 {
-  color: var(--color-white);
+  color: var(--color-gray-fff);
   font-weight: 700;
   font-size: 13px;
   line-height: 150%;
@@ -216,12 +216,12 @@ button:focus {
   margin-bottom: 16px;
 }
 
-.preview h3 {
+/* .preview h3 {
   color: var(--sub-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-}
+} */
 
 .preview h2 {
   color: var(--main-color);
