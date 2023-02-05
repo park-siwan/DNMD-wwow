@@ -60,13 +60,18 @@ swiper-container.event-find {
   width: 100%;
   /* padding-top: 70px; */
   /* padding-bottom: 120px; */
-  transform: translate(-29.3%);
+  /* transform: translate(-29.3%); */
 }
 
 .event-find swiper-slide {
   justify-content: center;
   align-items: center;
-  /* margin-right: 27px; */
+  margin-right: 27px;
+}
+@media screen and (min-width: 768px) {
+  .event-find swiper-slide {
+    margin-right: 0px;
+  }
 }
 /* <div class="mx-auto w-full h-full flex justify-center">
 <section class="preview overflow-hidden -mx-5 max-w-[800px]">

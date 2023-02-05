@@ -112,22 +112,6 @@ button:focus {
 .info {
   height: 467px;
 }
-/* .star .circle {
-  position: absolute;
-} */
-/* 
-.info .line .star {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-
-} */
-
-/* .info .line .circle {
-  position: relative;
-  top: -135px;
-  left: -36px;
-} */
 
 .copywriting h3 {
   color: var(--color-gray-333);
@@ -229,97 +213,10 @@ button:focus {
   line-height: 150%;
 }
 
-/* .preview img {
-  width: 234px;
-  margin-top: 22px;
-} */
-
-/* .festival .line .star,
-.festival .line .bstar,
-.festival .line .curvature {
-  position: relative;
-} */
-
-/* .festival .line .star:first-child {
-  width: 24px;
-  height: 24px;
-  top: -285px;
-  left: 20px;
-}
-
-.festival .line .star:nth-child(2) {
-  width: 12px;
-  height: 12px;
-  top: -348px;
-  left: 48px;
-}
-
-.festival .line .bstar {
-  width: 34px;
-  height: 34px;
-  top: -256px;
-  left: 287px;
-} */
-/* z-index: 1;  html 순서가 잘못된건가 */
-/* .festival .line .curvature {
-  width: 387.36px;
-  height: 566.01px;
-  top: -1019px;
-  left: 25px;
-
-} */
-
-/* content > section(=swipe) */
 .content {
   height: 1139px;
   background-color: var(--bg-color);
 }
-
-/* .swipe .event,
-.swipe .profile {
-  width: 240px;
-  height: 270.77px;
-  background-color: var(--color-black);
-  border: 2px solid #f5f5f5;
-  border-radius: 16px;
-}
-
-.swipe h4 {
-  color: var(--color-gray-555);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 150%;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.swipe h4:nth-child(6) {
-  margin-top: 80.64px;
-}
-
-.swipe h3 {
-  color: #333333;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  margin-top: 62px;
-  margin-bottom: 12px;
-  text-align: center;
-}
-
-.swipe h2 {
-  color: #00c65b;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 150%;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.swipe h2:last-child {
-  margin-top: 60px;
-  margin-bottom: 38px;
-} */
 
 /* questions > FAQ = 자주 묻는 질문 */
 .questions h3 {
@@ -358,23 +255,24 @@ button:focus {
 }
 
 .faq label::before {
-  /* 제목 옆 화살표 */
-  display: block;
-  content: '';
-  width: 0;
-  height: 0;
-  border: 8px solid transparent;
-  border-left: 8px solid var(--color-gray-777);
+  content: '\e902';
+  color: var(--color-gray-777);
+  font-family: 'dnmd-wow-font' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* margin-left: auto; */
   margin: 2px 0 0 8px;
   float: right;
 }
 
 .faq input:checked + label::before {
   /* 내용 펼침 상태 제목 옆 화살표 */
-  border: 8px solid transparent;
-  border-top: 8px solid var(--color-gray-777);
-  border-bottom: 0;
-  margin: 8px 4px 0;
+  transform: rotate(180deg);
 }
 
 .faq div {
