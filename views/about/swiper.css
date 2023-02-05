@@ -1,19 +1,20 @@
-swiper-container {
+swiper-container.wow-view {
   width: 100%;
   padding-top: 70px;
   padding-bottom: 120px;
 }
 
-swiper-slide {
+.wow-view swiper-slide {
   justify-content: center;
   align-items: center;
 }
-.img-container {
+
+.wow-view .img-container {
   width: 163px;
   height: 194px;
   position: relative;
 }
-.img-container img {
+.wow-view .img-container img {
   position: absolute;
   top: 0;
   left: 50%;
@@ -22,7 +23,7 @@ swiper-slide {
   border-radius: 200%;
   z-index: 5;
 }
-.wow-view-line {
+.wow-view .wow-view-line {
   position: absolute;
   width: 180px;
   height: 240px;
@@ -38,19 +39,39 @@ swiper-slide {
   background-clip: content-box, border-box;
 }
 /* 정중앙 블러없는곳 */
-.swiper-slide-next {
+.wow-view .swiper-slide-next {
   width: 234px !important;
   height: 278px !important;
   filter: blur(0) !important;
   transform: scale(1.4) !important;
 }
 /* 와우 맛보기 좌우 */
-swiper-slide :not(.swiper-slide-next) img {
+.wow-view swiper-slide :not(.swiper-slide-next) img {
   width: 186px;
   height: 222px;
 }
 
-.swiper-slide-active,
-.swiper-slide-visible {
+.wow-view .swiper-slide-active,
+.wow-view .swiper-slide-visible {
   filter: blur(5px);
 }
+
+swiper-container.event-find {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 120px;
+  transform: translate(-29.3%);
+}
+
+.event-find swiper-slide {
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 27px; */
+}
+/* <div class="mx-auto w-full h-full flex justify-center">
+<section class="preview overflow-hidden -mx-5 max-w-[800px]">
+
+  <!-- 피자 세 개 -->
+  <div
+    class="w-[200%] max-w-[800px] md:w-[100%] flex justify-center"
+  > */
