@@ -17,8 +17,7 @@ button:focus {
 
 .slogan,
 .copywriting,
-.preview,
-.swipe {
+.preview {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -276,7 +275,7 @@ button:focus {
   background-color: var(--bg-color);
 }
 
-.swipe .event,
+/* .swipe .event,
 .swipe .profile {
   width: 240px;
   height: 270.77px;
@@ -320,7 +319,7 @@ button:focus {
 .swipe h2:last-child {
   margin-top: 60px;
   margin-bottom: 38px;
-}
+} */
 
 /* questions > FAQ = 자주 묻는 질문 */
 .questions h3 {

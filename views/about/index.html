@@ -184,12 +184,12 @@
       </div>
 
       <!-- festival > section(=preview) -->
-      <div class="bg-[color:var(--color-gray-222)]" id="wow-view">
+      <div class="bg-[color:var(--color-gray-222)] pb-[136px]" id="wow-view">
         <div class="container festival">
           <div class="row">
             <div class="col-sm-4">
               <div class="triangle"></div>
-              <div class="mx-auto w-full flex justify-center">
+              <div class="mx-auto w-full h-full flex justify-center">
                 <section class="preview overflow-hidden -mx-5 max-w-[800px]">
                   <h4 class="flex justify-center w-full">와우 엿보기</h4>
                   <!-- 피자 세 개 -->
@@ -197,11 +197,12 @@
                     class="w-[200%] max-w-[800px] md:w-[100%] flex justify-center"
                   >
                     <swiper-container
-                      class="mySwiper ml-6"
+                      class="mySwiper wow-view ml-6"
                       watch-slides-progress="true"
                       slides-per-view="3"
                       autoplay="true"
                       loop="true"
+                      loop-additional-slides="1"
                     >
                       <swiper-slide>
                         <div class="flex flex-col items-center justify-center">
@@ -320,99 +321,275 @@
       <div class="container content">
         <div class="row">
           <div class="col-sm-4">
-            <section class="swipe">
-              <div class="event"></div>
-
-              <h4>
-                복잡한 세상 재미라도 챙겨요<br />
-                따분한 이벤트는 여기 없어요
-              </h4>
-              <h3>단순한 마이 페이지는 NOPE!</h3>
-              <h2>
-                프로필로 남들과 다른<br />
-                당신을 알리세요
-              </h2>
-
-              <!--
-    <div
-        class="w-[200%] max-w-[800px] md:w-[100%] flex justify-center"
-      >
-        <swiper-container
-          class="mySwiper ml-2"
-          watch-slides-progress="true"
-          slides-per-view="3"
-          autoplay="true"
-          loop="true"
-        >
-          <swiper-slide>
-            <div id="filtered-img">
-                <div class="background-filter1"></div>
-                <div class="background-filter2"></div>
-                <div class="background-picture">
-                  <img
-                    src="../../assets/images/profile_image-300x300.png"
-                    alt="프로필 사진"
-                  />
+            <div class="">
+              <section class="overflow-hidden -mx-5 max-w-[800px]">
+                <!-- <div class="event"></div> -->
+                <div
+                  class="w-[200%] max-w-[800px] md:w-[100%] flex justify-center"
+                >
+                  <swiper-container
+                    class="mySwiper event-find w-full"
+                    watch-slides-progress="true"
+                    slides-per-view="3"
+                    space-between="100"
+                    centered-slides="false"
+                    loop="true"
+                    loop-additional-slides="1"
+                  >
+                    <swiper-slide>
+                      <div
+                        class="event-cards bg-[#111111] rounded-2xl w-[268px]"
+                      >
+                        <section class="card p-5">
+                          <strong class="due-tag">모집 D-20</strong>
+                          <a href="" class="picture link-detail">
+                            <img
+                              src="https://wwwow.io/dataFiles/Contents/EDaNx52lvC/datas/banner.jpg?1673249336"
+                              alt="event-image"
+                              loading="lazy"
+                            />
+                          </a>
+                          <div class="title-container">
+                            <h2 class="text-[color:var(--color-white)]">
+                              <a href="" class="link-detail">이벤트 타이틀</a>
+                            </h2>
+                            <button class="like">
+                              <i class="ic-heart" aria-label="좋아요"></i>
+                            </button>
+                          </div>
+                          <h3
+                            class="creator text-[color:var(--color-tertiary)]"
+                          >
+                            크리에이터명
+                          </h3>
+                          <div class="periods">
+                            <h4 class="recruit-period">
+                              모집기간 2023.01.05(목) - 2023.01.15(일)
+                            </h4>
+                            <h4 class="progress-period">
+                              진행기간 2023.01.31(화) 1:30 PM
+                            </h4>
+                          </div>
+                          <div class="state">
+                            <h5>모집중 👍</h5>
+                            <h5>무료 🙌</h5>
+                          </div>
+                        </section>
+                      </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <div
+                        class="event-cards bg-[#111111] rounded-2xl w-[268px]"
+                      >
+                        <section class="card p-5">
+                          <strong class="due-tag">모집 D-20</strong>
+                          <a href="" class="picture link-detail">
+                            <img
+                              src="https://wwwow.io/dataFiles/Contents/EDaNx52lvC/datas/banner.jpg?1673249336"
+                              alt="event-image"
+                              loading="lazy"
+                            />
+                          </a>
+                          <div class="title-container">
+                            <h2 class="text-[color:var(--color-white)]">
+                              <a href="" class="link-detail">이벤트 타이틀</a>
+                            </h2>
+                            <button class="like">
+                              <i class="ic-heart" aria-label="좋아요"></i>
+                            </button>
+                          </div>
+                          <h3
+                            class="creator text-[color:var(--color-tertiary)]"
+                          >
+                            크리에이터명
+                          </h3>
+                          <div class="periods">
+                            <h4 class="recruit-period">
+                              모집기간 2023.01.05(목) - 2023.01.15(일)
+                            </h4>
+                            <h4 class="progress-period">
+                              진행기간 2023.01.31(화) 1:30 PM
+                            </h4>
+                          </div>
+                          <div class="state">
+                            <h5>모집중 👍</h5>
+                            <h5>무료 🙌</h5>
+                          </div>
+                        </section>
+                      </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <div
+                        class="event-cards bg-[#111111] rounded-2xl w-[268px]"
+                      >
+                        <section class="card p-5">
+                          <strong class="due-tag">모집 D-20</strong>
+                          <a href="" class="picture link-detail">
+                            <img
+                              src="https://wwwow.io/dataFiles/Contents/EDaNx52lvC/datas/banner.jpg?1673249336"
+                              alt="event-image"
+                              loading="lazy"
+                            />
+                          </a>
+                          <div class="title-container">
+                            <h2 class="text-[color:var(--color-white)]">
+                              <a href="" class="link-detail">이벤트 타이틀</a>
+                            </h2>
+                            <button class="like">
+                              <i class="ic-heart" aria-label="좋아요"></i>
+                            </button>
+                          </div>
+                          <h3
+                            class="creator text-[color:var(--color-tertiary)]"
+                          >
+                            크리에이터명
+                          </h3>
+                          <div class="periods">
+                            <h4 class="recruit-period">
+                              모집기간 2023.01.05(목) - 2023.01.15(일)
+                            </h4>
+                            <h4 class="progress-period">
+                              진행기간 2023.01.31(화) 1:30 PM
+                            </h4>
+                          </div>
+                          <div class="state">
+                            <h5>모집중 👍</h5>
+                            <h5>무료 🙌</h5>
+                          </div>
+                        </section>
+                      </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                      <div
+                        class="event-cards bg-[#111111] rounded-2xl w-[268px]"
+                      >
+                        <section class="card p-5">
+                          <strong class="due-tag">모집 D-20</strong>
+                          <a href="" class="picture link-detail">
+                            <img
+                              src="https://wwwow.io/dataFiles/Contents/EDaNx52lvC/datas/banner.jpg?1673249336"
+                              alt="event-image"
+                              loading="lazy"
+                            />
+                          </a>
+                          <div class="title-container">
+                            <h2 class="text-[color:var(--color-white)]">
+                              <a href="" class="link-detail">이벤트 타이틀</a>
+                            </h2>
+                            <button class="like">
+                              <i class="ic-heart" aria-label="좋아요"></i>
+                            </button>
+                          </div>
+                          <h3
+                            class="creator text-[color:var(--color-tertiary)]"
+                          >
+                            크리에이터명
+                          </h3>
+                          <div class="periods">
+                            <h4 class="recruit-period">
+                              모집기간 2023.01.05(목) - 2023.01.15(일)
+                            </h4>
+                            <h4 class="progress-period">
+                              진행기간 2023.01.31(화) 1:30 PM
+                            </h4>
+                          </div>
+                          <div class="state">
+                            <h5>모집중 👍</h5>
+                            <h5>무료 🙌</h5>
+                          </div>
+                        </section>
+                      </div>
+                    </swiper-slide>
+                  </swiper-container>
                 </div>
-              </div>
-              <div class="my">
-                <div class="my-wrapper">
-                  <div class="user-picture">
-                    프로필 초록색원 활성화 여부
-                    <div class="circle is-active"></div>
+                <h4>
+                  복잡한 세상 재미라도 챙겨요<br />
+                  따분한 이벤트는 여기 없어요
+                </h4>
+                <h3>단순한 마이 페이지는 NOPE!</h3>
+                <h2>
+                  프로필로 남들과 다른<br />
+                  당신을 알리세요
+                </h2>
+                <!--
+                  <div
+                      class="w-[200%] max-w-[800px] md:w-[100%] flex justify-center"
+                    >
+                      <swiper-container
+                        class="mySwiper ml-2"
+                        watch-slides-progress="true"
+                        slides-per-view="3"
+                        autoplay="true"
+                        loop="true"
+                      >
+                        <swiper-slide>
+              <div id="filtered-img">
+                  <div class="background-filter1"></div>
+                  <div class="background-filter2"></div>
+                  <div class="background-picture">
                     <img
                       src="../../assets/images/profile_image-300x300.png"
                       alt="프로필 사진"
                     />
                   </div>
-                  <div class="name">
-                    <h1 class="primary">Nickname</h1>
-                    <span class="secondary">@hambi</span>
-                  </div>
-                   팔로우 팔로잉 전환 2가지 
-                   <button class="follow-btn">+ 팔로우</button> 
-                  <button class="following-btn">
-                    <span>팔로잉</span>
-                    <i class="ic-check" aria-label="뒤로가기"></i>
-                  </button>
-                  <ol class="hash-chip-container">
-                    <li>
-                      <button class="hash-chip">#여행</button>
-                    </li>
-                    <li>
-                      <button class="hash-chip">#사진</button>
-                    </li>
-                    <li>
-                      <button class="hash-chip">#스냅</button>
-                    </li>
-                  </ol>
-                  <div class="follow-state">
-                    <div class="follower">
-                      <h2>팔로워</h2>
-                      <span>3.7k</span>
+                </div>
+                <div class="my">
+                  <div class="my-wrapper">
+                    <div class="user-picture">
+                      프로필 초록색원 활성화 여부
+                      <div class="circle is-active"></div>
+                      <img
+                        src="../../assets/images/profile_image-300x300.png"
+                        alt="프로필 사진"
+                      />
                     </div>
-                    <div class="following">
-                      <h2>팔로잉</h2>
-                      <span>17</span>
+                    <div class="name">
+                      <h1 class="primary">Nickname</h1>
+                      <span class="secondary">@hambi</span>
+                    </div>
+                     팔로우 팔로잉 전환 2가지
+                     <button class="follow-btn">+ 팔로우</button>
+                    <button class="following-btn">
+                      <span>팔로잉</span>
+                      <i class="ic-check" aria-label="뒤로가기"></i>
+                    </button>
+                    <ol class="hash-chip-container">
+                      <li>
+                        <button class="hash-chip">#여행</button>
+                      </li>
+                      <li>
+                        <button class="hash-chip">#사진</button>
+                      </li>
+                      <li>
+                        <button class="hash-chip">#스냅</button>
+                      </li>
+                    </ol>
+                    <div class="follow-state">
+                      <div class="follower">
+                        <h2>팔로워</h2>
+                        <span>3.7k</span>
+                      </div>
+                      <div class="following">
+                        <h2>팔로잉</h2>
+                        <span>17</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="fake-container"></div>
-              </swiper-slide>
-            -->
-
-              <div id="my-profile"></div>
-
-              <h4>
-                일잘러는 많은데 왜 놀잘러는 없죠?<br />
-                와우에선 누구나 놀잘러가 될 수 있어요.
-              </h4>
-              <h2>
-                매일 새로운 재미를<br />
-                와우에서 경험하세요
-              </h2>
-            </section>
+                <div class="fake-container"></div>
+                </swiper-slide>
+              -->
+                <div id="my-profile"></div>
+                <h4>
+                  일잘러는 많은데 왜 놀잘러는 없죠?<br />
+                  와우에선 누구나 놀잘러가 될 수 있어요.
+                </h4>
+                <h2>
+                  매일 새로운 재미를<br />
+                  와우에서 경험하세요
+                </h2>
+              </section>
+            </div>
           </div>
         </div>
       </div>
