@@ -189,131 +189,109 @@
           <div class="row">
             <div class="col-sm-4">
               <div class="triangle"></div>
-              <section class="preview overflow-hidden">
-                <h4>와우 엿보기</h4>
-                <!-- 피자 세 개 -->
-                <div class="w-[200%] flex justify-center scroll-horizontal">
-                  <swiper-container
-                    class="mySwiper"
-                    watch-slides-progress="true"
-                    slides-per-view="3"
-                    autoplay="false"
-                    loop="true"
-                  >
-                    <swiper-slide>
-                      <div class="flex flex-col items-center justify-center">
-                        <h3 class="text-center h-6">피자 덕후가 만드는</h3>
-                        <h2 class="text-center mb-6 h-7">피자 페스티벌2</h2>
-                        <div class="img-container">
-                          <img
-                            src="https://blog.kakaocdn.net/dn/P1x89/btq5adtMRSY/w3gQIaKZLf1TPR0QXqqXik/img.jpg"
-                            alt="피자"
-                          />
-                          <div class="wow-view-line"></div>
-                        </div>
-                      </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                      <div class="flex flex-col items-center justify-center">
-                        <h3 class="text-center h-6">피자 덕후가 만드는</h3>
-                        <h2 class="text-center mb-6 h-7">피자 페스티벌2</h2>
-                        <div class="img-container">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/800px-Supreme_pizza.jpg"
-                            alt="피자"
-                          />
-                          <div class="wow-view-line"></div>
-                        </div>
-                      </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                      <div class="flex flex-col items-center justify-center">
-                        <h3 class="text-center h-6">피자 덕후가 만드는</h3>
-                        <h2 class="text-center mb-6 h-7">피자 페스티벌3</h2>
-                        <div class="img-container">
-                          <img
-                            src="https://i.ytimg.com/vi/X6VrQZhr5hQ/maxresdefault.jpg"
-                            alt="피자"
-                          />
-                          <div class="wow-view-line"></div>
-                        </div>
-                      </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                      <div class="flex flex-col items-center justify-center">
-                        <h3 class="text-center h-6">피자 덕후가 만드는</h3>
-                        <h2 class="text-center mb-6 h-7">피자 페스티벌4</h2>
-                        <div class="img-container">
-                          <img
-                            src="http://www.dailyimpact.co.kr/news/photo/202211/88703_71620_2419.jpg"
-                            alt="피자"
-                          />
-                          <div class="wow-view-line"></div>
-                        </div>
-                      </div>
-                    </swiper-slide>
-                    <!-- <swiper-slide>
-                      <div class="flex flex-col items-center justify-center">
-                        <h3 class="text-center">피자 덕후가 만드는</h3>
-                        <h2 class="text-center mb-6">피자 페스티벌</h2>
-                        <div class="img-container">
-                          <img
-                            src="https://i.ytimg.com/vi/X6VrQZhr5hQ/maxresdefault.jpg"
-                            alt="피자"
-                          />
-                          <div class="wow-view-line"></div>
-                        </div>
-                      </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                      <div class="flex flex-col items-center justify-center">
-                        <h3 class="text-center">피자 덕후가 만드는</h3>
-                        <h2 class="text-center mb-6">피자 페스티벌</h2>
-                        <div class="img-container">
-                          <img
-                            src="http://www.dailyimpact.co.kr/news/photo/202211/88703_71620_2419.jpg"
-                            alt="피자"
-                          />
-                          <div class="wow-view-line"></div>
-                        </div>
-                      </div>
-                    </swiper-slide> -->
-                  </swiper-container>
-                </div>
-                <div id="event-find" class="mt-[112px]">
+              <div class="mx-auto w-full flex justify-center">
+                <section class="preview overflow-hidden -mx-5 max-w-[800px]">
+                  <h4 class="flex justify-center w-full">와우 엿보기</h4>
+                  <!-- 피자 세 개 -->
                   <div
-                    class="relative flex flex-col justify-center items-center mb-8"
+                    class="w-[200%] max-w-[800px] md:w-[100%] flex justify-center"
                   >
-                    <h3>플레이어가 되면,</h3>
-                    <h2 class="text-center">
-                      매일 이벤트를 열고<br />
-                      참여자를 모을 수 있어요
-                    </h2>
-                    <img
-                      class="star w-3 absolute -top-10 left-[40px]"
-                      src="../../assets/images/star.svg"
-                      alt="star"
-                    />
-                    <img
-                      class="star w-6 absolute -top-5 left-[15px]"
-                      src="../../assets/images/star.svg"
-                      alt="star"
-                    />
-                    <img
-                      class="star w-6 absolute bottom-[-20px] right-[-30px]"
-                      src="../../assets/images/star.svg"
-                      alt="star"
-                    />
+                    <swiper-container
+                      class="mySwiper ml-2 md:ml-5"
+                      watch-slides-progress="true"
+                      slides-per-view="3"
+                      autoplay="true"
+                      loop="true"
+                    >
+                      <swiper-slide>
+                        <div class="flex flex-col items-center justify-center">
+                          <h3 class="text-center h-6">피자 덕후가 만드는</h3>
+                          <h2 class="text-center mb-6 h-7">피자 페스티벌2</h2>
+                          <div class="img-container">
+                            <img
+                              src="https://blog.kakaocdn.net/dn/P1x89/btq5adtMRSY/w3gQIaKZLf1TPR0QXqqXik/img.jpg"
+                              alt="피자"
+                            />
+                            <div class="wow-view-line"></div>
+                          </div>
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="flex flex-col items-center justify-center">
+                          <h3 class="text-center h-6">피자 덕후가 만드는</h3>
+                          <h2 class="text-center mb-6 h-7">피자 페스티벌2</h2>
+                          <div class="img-container">
+                            <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Supreme_pizza.jpg/800px-Supreme_pizza.jpg"
+                              alt="피자"
+                            />
+                            <div class="wow-view-line"></div>
+                          </div>
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="flex flex-col items-center justify-center">
+                          <h3 class="text-center h-6">피자 덕후가 만드는</h3>
+                          <h2 class="text-center mb-6 h-7">피자 페스티벌3</h2>
+                          <div class="img-container">
+                            <img
+                              src="https://i.ytimg.com/vi/X6VrQZhr5hQ/maxresdefault.jpg"
+                              alt="피자"
+                            />
+                            <div class="wow-view-line"></div>
+                          </div>
+                        </div>
+                      </swiper-slide>
+                      <swiper-slide>
+                        <div class="flex flex-col items-center justify-center">
+                          <h3 class="text-center h-6">피자 덕후가 만드는</h3>
+                          <h2 class="text-center mb-6 h-7">피자 페스티벌4</h2>
+                          <div class="img-container">
+                            <img
+                              src="http://www.dailyimpact.co.kr/news/photo/202211/88703_71620_2419.jpg"
+                              alt="피자"
+                            />
+                            <div class="wow-view-line"></div>
+                          </div>
+                        </div>
+                      </swiper-slide>
+                    </swiper-container>
                   </div>
-                </div>
-                <!-- <div class="line">
+                  <div id="event-find" class="mt-[112px]">
+                    <div
+                      class="relative flex flex-col justify-center items-center mb-8"
+                    >
+                      <h3>플레이어가 되면,</h3>
+                      <h2 class="text-center">
+                        매일 이벤트를 열고<br />
+                        참여자를 모을 수 있어요
+                      </h2>
+                      <img
+                        class="star w-3 absolute -top-10 left-[40px]"
+                        src="../../assets/images/star.svg"
+                        alt="star"
+                      />
+                      <img
+                        class="star w-6 absolute -top-5 left-[15px]"
+                        src="../../assets/images/star.svg"
+                        alt="star"
+                      />
+                      <img
+                        class="star w-6 absolute bottom-[-20px] right-[-30px]"
+                        src="../../assets/images/star.svg"
+                        alt="star"
+                      />
+                    </div>
+                  </div>
+                  <!-- <div class="line">
                   <img
                     class="curvature"
                     src="../../assets/images/curvature.png"
                     alt="curvature"
                   />
                 </div> -->
-              </section>
+                </section>
+              </div>
             </div>
           </div>
         </div>
